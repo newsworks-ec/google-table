@@ -29,17 +29,13 @@
 
 <!--  START COPYING HERE FOR JOOMLA  -->
 
+        <p> Delaware students took a brand new standardized test last school year. And now we finally have a feel for how they fared. </p>
 
-
-
-
-
-
-
+        <hr id="system-readmore" />
+        
         <div class="google-wrapper">
 
             <style>
-
                 .col-sm-7 {
                     width: 90%;
                 }
@@ -47,20 +43,15 @@
                 .col-sm-5 {
                     display: none;
                 }
-
                 #accordion {
                     max-width: 800px;
                 }
-
                 .ec-panel-top {
                     margin-top: 15px !important;
                 }
-
                 #ec-school-text {
                     max-width: 800px;
-
                 }
-
                 .ec-arrow-down2{
                     float: left;
                     width: 0;
@@ -71,7 +62,6 @@
                     margin-top: 10px;
                     margin-right: 10px;
                 }
-
             </style>
 
             <div id="ec-school-text">
@@ -88,27 +78,25 @@
                 <p><em>*Hey there, tablet and mobile users. This feature is best explored on a laptop or desktop.</em></p>
             </div>    
 
-	
+    
             <div class="panel-group" id="accordion">
 
-                	<div class="panel panel-default ec-panel-top">
+                    <div class="panel panel-default ec-panel-top">
                         <div class="panel-heading ec-panel-wrap" id="ec-parent-one" data-toggle="collapse" data-target="#collapseOne" onclick="_gaq.push(['_trackEvent', 'Accordion', 'accordion-panel-click', window.location.pathname,, true]);" >
                             <h4 class="panel-title ec-panel-grouping clearfix">
-                                <!--<span class="ec-arrow-down2">
-                                	
-                                </span>-->
+                                
                                 <span class="ec-arrow-down2">
                                     
                                 </span>    
                                   
                                 <span class="panel-title ec-name"> 
-                                	Appoquinimink School District
+                                    Appoquinimink School District
                                 </span>
                             </h4>
                         </div>
                         <div id="collapseOne" class="panel-collapse collapse ec-collapse">
                             <div class="panel-body">
-                            		<iframe width="100%" height="1600px" src="https://docs.google.com/spreadsheets/d/1NSIttiQuun1wScSvpDanV0_Zy04mvLqbinqYzVExkg0/pubhtml?gid=0&amp;single=true&amp;widget=false&amp;chrome=false&amp;range=A1:H56&amp;"></iframe>
+                                    <iframe width="100%" height="1600px" src="https://docs.google.com/spreadsheets/d/1NSIttiQuun1wScSvpDanV0_Zy04mvLqbinqYzVExkg0/pubhtml?gid=0&amp;single=true&amp;widget=false&amp;chrome=false&amp;range=A1:H56&amp;"></iframe>
                              
                             </div>
                         </div>
@@ -550,36 +538,20 @@
 
 
 
-                    <script>
-                    /*
-                        $( ".ec-arrow-down2" ).click(function() {
-                            if (  $( this ).css( "transform" ) == 'none' ){
-                                $(this).css("transform","rotate(180deg)");
-                            } else {
-                                $(this).css("transform","" );
-                            }
-                        });
-
-                    */
-
-                        
-                             jQuery( ".ec-arrow-down2" ).click(function() {
-                                 if (  jQuery(this).hasClass("rotate180")){
-                                     jQuery(this).removeClass("rotate180");
+                    <script>                        
+                             jQuery( ".ec-panel-top" ).click(function() {
+                                 currentArrow = (jQuery(this).find("span.ec-arrow-down2"));
+                                 if (  jQuery(currentArrow).hasClass("rotate180")){
+                                     jQuery(currentArrow).removeClass("rotate180");
                                  } else {
-                                     jQuery(this).addClass("rotate180");
+                                     jQuery(currentArrow).addClass("rotate180");
                                  }
                              });
-
                     </script>
 
-                 
-
-
-
-            </div>	<!--   closes div id = accordion  -->
-	
-        </div>	  <!--   closes div id = google-wrapper    -->
+            </div>   <!--   closes div id = accordion  -->
+    
+        </div>    <!--   closes div id = google-wrapper    -->
 
 
 
