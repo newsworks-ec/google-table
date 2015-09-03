@@ -71,6 +71,17 @@
                     border: none;
                 }
 
+                .ec-arrow-down2{
+                    float: left;
+                    width: 0;
+                    height: 0;
+                    border-left: 15px solid transparent;
+                    border-right: 15px solid transparent;
+                    border-top: 15px solid #6b8cbd;
+                    margin-top: 10px;
+                    margin-right: 10px;
+                }
+
 
             </style>
 
@@ -89,7 +100,7 @@
                 	<div class="panel panel-default ec-panel-top">
                         <div class="panel-heading ec-panel-wrap" id="ec-parent-one" data-toggle="collapse" data-target="#collapseOne" onclick="_gaq.push(['_trackEvent', 'Accordion', 'accordion-panel-click', window.location.pathname,, true]);" >
                             <h4 class="panel-title ec-panel-grouping clearfix">
-                                <span class="icon-arrow-down2 ec-arrow-down">
+                                <span class="ec-arrow-down2">
                                 	
                                 </span>
                                   
@@ -110,7 +121,7 @@
                     <div class="panel panel-default ec-panel-top">
                         <div class="panel-heading ec-panel-wrap" id="ec-parent-two" data-toggle="collapse" data-target="#collapseTwo" onclick="_gaq.push(['_trackEvent', 'Accordion', 'accordion-panel-click', window.location.pathname,, true]);" >
                             <h4 class="panel-title ec-panel-grouping clearfix">
-                                <span class="icon-arrow-down2 ec-arrow-down">
+                                <span class="ec-arrow-down2">
                                     
                                 </span>
                                   
@@ -128,6 +139,65 @@
                     </div>
 
 
+                    <div class="panel panel-default ec-panel-top">
+                        <div class="panel-heading ec-panel-wrap" id="ec-parent-three" data-toggle="collapse" data-target="#collapseThree" onclick="_gaq.push(['_trackEvent', 'Accordion', 'accordion-panel-click', window.location.pathname,, true]);" >
+                            <h4 class="panel-title ec-panel-grouping clearfix">
+                                <span class="ec-arrow-down2">
+                                    
+                                </span>
+                                  
+                                <span class="panel-title ec-name"> 
+                                    Web Producers
+                                </span>
+                            </h4>
+                        </div>
+                        <div id="collapseThree" class="panel-collapse collapse ec-collapse">
+                            <div class="panel-body">
+                                    <iframe width="100%" height="300px" src="https://docs.google.com/spreadsheets/d/1ZLwCBIBFS3_b5bVM0_h4v5WMiJU2LAPMy9zaXpKjEcI/pubhtml?gid=205624584&amp;single=true&amp;widget=false&amp;chrome=false&amp;range=A1:B56&amp;" scrolling="no"></iframe>
+                             
+                            </div>
+                        </div>
+                    </div>   
+
+
+                    <div class="panel panel-default ec-panel-top">
+                        <div class="panel-heading ec-panel-wrap" id="ec-parent-four" data-toggle="collapse" data-target="#collapseFour" onclick="_gaq.push(['_trackEvent', 'Accordion', 'accordion-panel-click', window.location.pathname,, true]);" >
+                            <h4 class="panel-title ec-panel-grouping clearfix">
+                                <span class="ec-arrow-down2">
+                                    
+                                </span>
+                                  
+                                <span class="panel-title ec-name"> 
+                                    Reporters / Producers
+                                </span>
+                            </h4>
+                        </div>
+                        <div id="collapseFour" class="panel-collapse collapse ec-collapse">
+                            <div class="panel-body">
+                                    <iframe width="100%" height="1500px" src="https://docs.google.com/spreadsheets/d/1ZLwCBIBFS3_b5bVM0_h4v5WMiJU2LAPMy9zaXpKjEcI/pubhtml?gid=1354254847&amp;single=true&amp;widget=false&amp;chrome=false&amp;range=A1:B66&amp;" scrolling="no"></iframe>
+                             
+                            </div>
+                        </div>
+                    </div> 
+
+
+
+
+
+
+
+
+
+                     <script>                        
+                         jQuery( ".ec-panel-top" ).click(function() {
+                             currentArrow = (jQuery(this).find("span.ec-arrow-down2"));
+                             if (  jQuery(currentArrow).hasClass("rotate180")){
+                                 jQuery(currentArrow).removeClass("rotate180");
+                             } else {
+                                 jQuery(currentArrow).addClass("rotate180");
+                             }
+                         });
+                    </script>
 
 
 
